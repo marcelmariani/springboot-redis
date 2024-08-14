@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "e1ad90d9-8c80-48b6-9a35-429b768f551f",
+		"name": "springboot-redis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5756852",
+		"_collection_link": "https://orange-moon-819999.postman.co/workspace/Spring-Boot~2f88cd47-cc09-4c66-a176-730beec15c17/collection/5756852-e1ad90d9-8c80-48b6-9a35-429b768f551f?action=share&source=collection_link&creator=5756852"
+	},
+	"item": [
+		{
+			"name": "save Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"document_id\" : \"1\",\r\n    \"name\" : \"Name 1\",\r\n    \"email\" : \"name1@teste.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/v2/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"v2",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list Customer Redis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/v2/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"v2",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list Customer H2 relational database",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/v1/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

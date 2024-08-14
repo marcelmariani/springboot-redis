@@ -27,7 +27,7 @@ Technologies:
  - del + {index} -> delete information
 
 5 - Postman Collection
- - ./
+ - ./springboot-redis.postman_collection.json
 
 6 - Dockerfile
  - Provided docker-compose.yml to deploy Redis Database e Redis Commander# springboot-redis

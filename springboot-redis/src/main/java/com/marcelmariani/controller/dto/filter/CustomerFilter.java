@@ -12,7 +12,6 @@ import lombok.Setter;
 public class CustomerFilter {
 
 	private String documentId;
-//	private String id;
 	private String name;
 	private String email;
 
